@@ -22,6 +22,9 @@ typedef struct __mavlink_msg_omni_sensors_main_type
 	float channel3_current;
 	float channel4_voltage;
 	float channel4_current;
+	//throttle_pwm
+	uint16_t throttle_pwm_input; 	//from 800 to 2400
+	uint16_t throttle_pwm_output;	//from 800 to 2400
 	// Encoders (angle in degrees)
 	uint8_t throttle_encoder;		//0.5 degree
 	uint8_t tail_rotor_encoder;		//0.5 degree
@@ -34,8 +37,8 @@ typedef struct __mavlink_msg_omni_sensors_main_type
 	uint8_t trusted_sensors;
 } mavlink_msg_omni_sensors_main_type;
 
-#define MAVLINK_MSG_OMNI_SENSORS_MAIN_LEN 	55
-#define MAVLINK_MSG_OMNI_SENSORS_MAIN_MIN_LEN 55
+#define MAVLINK_MSG_OMNI_SENSORS_MAIN_LEN 	59
+#define MAVLINK_MSG_OMNI_SENSORS_MAIN_MIN_LEN 59
 
 #define MAVLINK_MSG_OMNI_SENSORS_MAIN_CRC 	0
 
