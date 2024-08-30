@@ -2605,6 +2605,13 @@ typedef enum MISSION_STATE
 #include "./mavlink_msg_omni_sensors_main.h"
 #include "./mavlink_msg_omni_start_engine.h"
 #include "./mavlink_msg_omni_gas_level.h"
+#include "./mavlink_msg_omni_smu_control_ack.h"
+#include "./mavlink_msg_omni_smu_preheat_start.h"
+#include "./mavlink_msg_omni_smu_source.h"
+#include "./mavlink_msg_omni_smu_start.h"
+#include "./mavlink_msg_omni_smu_start_ack.h"
+#include "./mavlink_msg_omni_smu_stop.h"
+#include "./mavlink_msg_omni_smu_stop_ack.h"
 
 // base include
 #include "../standard/standard.h"
