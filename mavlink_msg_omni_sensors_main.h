@@ -5,7 +5,7 @@
 
 typedef struct __mavlink_msg_omni_sensors_main_type
 {
-	//fuel
+	// Fuel sensors
 	uint8_t tank1_fuel_level; 		//first fuel level in % from 0 to 100
 	uint8_t tank2_fuel_level; 		//second fuel level in % from 0 to 100
 	//temperature
