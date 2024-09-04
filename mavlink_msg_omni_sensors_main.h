@@ -5,6 +5,7 @@
 
 typedef struct __mavlink_msg_omni_sensors_main_type
 {
+	uint8_t sensors_connection;
 	// Fuel sensors
 	uint8_t tank1_fuel_level; 		//first fuel level in % from 0 to 100
 	uint8_t tank2_fuel_level; 		//second fuel level in % from 0 to 100
@@ -37,8 +38,8 @@ typedef struct __mavlink_msg_omni_sensors_main_type
 	uint8_t trusted_sensors;
 } mavlink_msg_omni_sensors_main_type;
 
-#define MAVLINK_MSG_OMNI_SENSORS_MAIN_LEN 	59
-#define MAVLINK_MSG_OMNI_SENSORS_MAIN_MIN_LEN 59
+#define MAVLINK_MSG_OMNI_SENSORS_MAIN_LEN 	60
+#define MAVLINK_MSG_OMNI_SENSORS_MAIN_MIN_LEN 60
 
 #define MAVLINK_MSG_OMNI_SENSORS_MAIN_CRC 	0
 
