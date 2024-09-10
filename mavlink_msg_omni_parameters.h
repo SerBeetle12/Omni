@@ -16,48 +16,35 @@ typedef struct __mavlink_msg_omni_parameters_type
 	uint8_t encoder_tail_zero_shift;
 	//26
 	uint16_t 	rpm_engine_prescaller;
-	uint16_t 	rpm_engine_max;
 	uint8_t 	rpm_engine_filter;
 	uint16_t 	rpm_rotor_prescaller;
-	uint16_t 	rpm_rotor_max;
 	uint8_t 	rpm_rotor_filter;
-	//36
+	//32
 	uint8_t		height_sensor_filter;
 	uint16_t	height_sensor_max_prefilght_level;
-	//39
+	//35
 	float fuel_sensor_a_1;
 	float fuel_sensor_b_1;
 	float fuel_sensor_a_2;
 	float fuel_sensor_b_2;
-	//55
-	uint16_t engine_off_rpm;
-	uint16_t engine_off_pwm;
-	uint16_t engine_idle_rpm;
-	uint16_t engine_idle_pwm;
-	uint16_t engine_preheat_rpm;
-	uint16_t engine_preheat_pwm;
-	uint16_t engine_max_rpm;
-	uint16_t engine_max_pwm;
-	uint16_t engine_min_rpm;
-	uint16_t engine_min_pwm;
-	//74
+	//51
 	float engine_gas_level_a;
 	float engine_gas_level_b;
 	float engine_gas_level_c;
 	float engine_gas_level_d;
 	uint16_t engine_max_inc_rpm;
 	uint16_t engine_max_inc_pwm;
-	//94
+	//71
 	uint8_t engine_start_time;
 	uint8_t emergency_sound_time;
-	//96
+	//73
 	uint32_t reserv_param;
-	//100
+	//77
 	
 } mavlink_msg_omni_parameters_type;
 
-#define MAVLINK_MSG_OMNI_PARAMETERS_LEN 	100
-#define MAVLINK_MSG_OMNI_PARAMETERS_MIN_LEN 100
+#define MAVLINK_MSG_OMNI_PARAMETERS_LEN 	77
+#define MAVLINK_MSG_OMNI_PARAMETERS_MIN_LEN 77
 
 #define MAVLINK_MSG_OMNI_PARAMETERS_CRC 	0
 
