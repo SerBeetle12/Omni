@@ -2612,6 +2612,7 @@ typedef enum MISSION_STATE
 #include "./mavlink_msg_omni_smu_start_ack.h"
 #include "./mavlink_msg_omni_smu_stop.h"
 #include "./mavlink_msg_omni_smu_stop_ack.h"
+#include "./mavlink_msg_omni_parameters.h"
 
 // base include
 #include "../standard/standard.h"
