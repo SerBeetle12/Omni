@@ -3,7 +3,7 @@
 
 #define MAVLINK_MSG_ID_OMNI_SMU_PREHEAT_START 12005
 
-typedef struct __mavlink_msg_omni_smu_preheat_start_type
+struct __mavlink_msg_omni_smu_preheat_start_type
 {
 	uint8_t 	preheat_cycle_count; 
 	uint16_t 	idle_revs; 	
@@ -11,7 +11,9 @@ typedef struct __mavlink_msg_omni_smu_preheat_start_type
 	uint8_t 	icu_work_temp;
 	uint16_t 	preheat_cycle_length;
 	
-} mavlink_msg_omni_smu_preheat_start_type;
+} __attribute__((packed));
+
+typedef struct __mavlink_msg_omni_smu_preheat_start_type mavlink_msg_omni_smu_preheat_start_type;
 
 #define MAVLINK_MSG_OMNI_SMU_PREHEAT_START_LEN 		8
 #define MAVLINK_MSG_OMNI_SMU_PREHEAT_START_MIN_LEN 	8
