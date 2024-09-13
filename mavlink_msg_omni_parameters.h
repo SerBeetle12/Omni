@@ -11,6 +11,9 @@ typedef struct __mavlink_msg_omni_parameters_type
 	float temp_sensor_2_a;
 	float temp_sensor_2_b;
 	float temp_sensor_ref_2;
+	
+	int16_t temp_sensor_max_temperature;
+	int16_t temp_sensor_min_temperature;
 	//24
 	uint8_t encoder_throttle_zero_shift;
 	uint8_t encoder_tail_zero_shift;
@@ -43,8 +46,8 @@ typedef struct __mavlink_msg_omni_parameters_type
 	
 } mavlink_msg_omni_parameters_type;
 
-#define MAVLINK_MSG_OMNI_PARAMETERS_LEN 	77
-#define MAVLINK_MSG_OMNI_PARAMETERS_MIN_LEN 77
+#define MAVLINK_MSG_OMNI_PARAMETERS_LEN 	81
+#define MAVLINK_MSG_OMNI_PARAMETERS_MIN_LEN 81
 
 #define MAVLINK_MSG_OMNI_PARAMETERS_CRC 	0
 
