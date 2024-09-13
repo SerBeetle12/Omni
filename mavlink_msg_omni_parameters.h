@@ -3,7 +3,7 @@
 
 #define MAVLINK_MSG_ID_OMNI_PARAMETERS 12012
 
-typedef struct __mavlink_msg_omni_parameters_type
+struct __mavlink_msg_omni_parameters_type
 {
 	float temp_sensor_1_a;
 	float temp_sensor_1_b;
@@ -44,7 +44,9 @@ typedef struct __mavlink_msg_omni_parameters_type
 	uint32_t reserv_param;
 	//77
 	
-} mavlink_msg_omni_parameters_type;
+} __attribute__((packed));
+
+typedef struct __mavlink_msg_omni_parameters_type mavlink_msg_omni_parameters_type;
 
 #define MAVLINK_MSG_OMNI_PARAMETERS_LEN 	81
 #define MAVLINK_MSG_OMNI_PARAMETERS_MIN_LEN 81
